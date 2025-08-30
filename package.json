@@ -1,0 +1,32 @@
+{
+  "name": "movies_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
+    "start:dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' app.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilparmar4/movies_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilparmar4/movies_backend/issues"
+  },
+  "homepage": "https://github.com/sahilparmar4/movies_backend#readme",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.10",
+    "yup": "^1.7.0"
+  }
+}
