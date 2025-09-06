@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/app.js",
-    "start:dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' app.ts",
-    "build": "tsc"
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/app.ts"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,15 @@
   "homepage": "https://github.com/sahilparmar4/movies_backend#readme",
   "description": "",
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
     "nodemon": "^3.1.10",
     "yup": "^1.7.0"
   }
