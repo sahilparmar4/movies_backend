@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon src/app.ts"
+    "dev": "nodemon src/app.ts",
+    "seed": "ts-node src/seeder/seedAdmin.ts"
   },
   "repository": {
     "type": "git",
@@ -21,15 +22,19 @@
   "homepage": "https://github.com/sahilparmar4/movies_backend#readme",
   "description": "",
   "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/multer": "^2.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.0",
+    "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.10",
     "yup": "^1.7.0"
   }
