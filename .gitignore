@@ -1,5 +1,6 @@
 node_modules
 dist
+uploads
 .env
 .DS_Store
 .vscode
@@ -28,6 +29,4 @@ build
 *.war
 *.jar
 *.iml
-*.ipr       
-
-uploads
+*.ipr
